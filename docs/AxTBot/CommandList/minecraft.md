@@ -10,7 +10,9 @@ title: Minecraft信息查询
 |功能|指令|
 | ------------ | ------------ |
 | 获取玩家UUID等信息 | /mc [ID] |
-| 获取玩家皮肤文件 | #mcskin [ID] |
+| 获取玩家皮肤文件 | /mcskin [ID] |
+| 获取玩家皮肤头像 | /mchead [ID] |
+| 获取玩家皮肤躯干 | /mcbody [ID] | 
 | 支持Java/BE查询 | /mcping [IP:端口] |
 | Java服务器详细查询 | /mcping [IP:端口] java |
 | Bedrock服务器详细查询 | /mcping [IP:端口] be |

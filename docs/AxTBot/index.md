@@ -21,4 +21,5 @@ title: AxTBot
 |AxT社区机器人| [@机器人 /hotlist [类型] ](/AxTBot/CommandList/hotlist) | 获取热搜榜信息的信息 |
 |AxT社区机器人| [@机器人 /steam [昵称/ID] ](/AxTBot/CommandList/steam) | 获取Steam账号信息 |
 |AxT社区机器人| [@机器人 /ask [问题] ](/AxTBot/CommandList/ask) | 赛博答案之书 |
+|AxT社区机器人| [@机器人 /摸 [QQ号] ](/AxTBot/CommandList/touch) | 生成摸头GIF |
 |AxT社区机器人| [@机器人 jrrp](/AxTBot/CommandList/jrrp)   | 获取今日人品 |

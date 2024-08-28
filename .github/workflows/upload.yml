@@ -1,0 +1,42 @@
+name: Node CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - run: npm install
+    - run: npm run build
+
+
+    - name: Deploy to Baota Server
+      uses: easingthemes/ssh-deploy@v4.1.8 # 使用ssh-deploy Action
+      with:
+        ssh-private-key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH私钥
+        remote-user: ${{ secrets.SERVER_USER }} # 服务器用户名
+        remote-host: ${{ secrets.SERVER_HOST }} # 服务器地址
+        remote-port: ${{ secrets.SERVER_PORT }} # SSH端口，默认为22
+        target-path: ${{ secrets.SERVER_TARGET }} # 服务器上的目标路径
+        source: 'dist/' # 要上传的本地目录
+        args: '-rltgoDzv' # rsync参数
+        before-script: |
+          mkdir -P ${{ secrets.SERVER_TARGET }}
+          rm -rf ${{ secrets.SERVER_TARGET }}/*
+
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true

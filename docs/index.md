@@ -39,7 +39,7 @@ sidebar_position: 1
  | ----------------- | ----------------------------------------------------------- | ----- |
  | AxT 官网          | [https://www.axtn.net/](https://www.axtn.net)                | 98% |
  | AxT 论坛          | [https://forum.axtn.net/](https://forum.axtn.net/)           | 55% |
- | AxT 文档          | [https://docs.axtn.net/](https://docs.axtn.net/)             | 65% |
+ | AxT 文档          | [https://docs.axtn.net/](https://docs.axtn.net/)             | 67% |
  | AxT API          | [https://api.axtn.net/](https://api.axtn.net/)               | 60% |
  | AxT 用户面板      | [https://dash.axtn.net/](https://dash.axtn.net/)             | 55% |
  | UApi             | [https://uapis.cn](https://uapis.cn)                         | 75% |
@@ -72,11 +72,12 @@ sidebar_position: 1
 
 | 项目名           | 描述                               | 负责人     | 是否收费     | 完成度 |
 | --------------- | ---------------------------------- | ---------- | ----------- | ------ |
-| **EasyConnect** | /                                  | @XiaoXian   | 部分收费     | 0% |
+| **EasyWAN** | /                                  | @XiaoXian   | 部分收费     | 0% |
 | **MCMirror**    | Minecraft镜像站                     | @XiaoXian @melisaaaa  | 公益        | 80% |
-| **ATMirror**    | 轻量化不限速镜像下载站               | @XiaoXian   | 公益         | 10% |
 
 
 ## 停止维护的项目
 
-**暂无**
+| 项目名           | 描述                               | 负责人     | 是否收费     |
+| --------------- | ---------------------------------- | ---------- | ----------- |
+| **ATMirror**    | 轻量化不限速镜像下载站               | @XiaoXian   | 公益         |

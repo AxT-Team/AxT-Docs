@@ -27,14 +27,15 @@ jobs:
     - name: Deploy to Baota Server
       uses: easingthemes/ssh-deploy@v4.1.8 # 使用ssh-deploy Action
       with:
-        ssh-private-key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH私钥
-        remote-user: ${{ secrets.SERVER_USER }} # 服务器用户名
-        remote-host: ${{ secrets.SERVER_HOST }} # 服务器地址
-        remote-port: ${{ secrets.SERVER_PORT }} # SSH端口，默认为22
-        target-path: ${{ secrets.SERVER_TARGET }} # 服务器上的目标路径
-        source: 'dist/' # 要上传的本地目录
-        args: '-rltgoDzv' # rsync参数
-        before-script: |
+        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+        REMOTE_USER: ${{ secrets.SERVER_USER }}
+        REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+        SOURCE: 'dist/'
+        TARGET: ${{ secrets.SERVER_TARGET }}
+        ARGS: '-rltgoDzv'
+        EXCLUDE: 'node_modules/'
+        SCRIPT_BEFORE: |
           mkdir -P ${{ secrets.SERVER_TARGET }}
           rm -rf ${{ secrets.SERVER_TARGET }}/*
 

@@ -5,7 +5,7 @@ title: 获取AxTBot信息
 
 # 获取AxTBot信息
 
-用法：`@机器人 /atinfo`
+用法：`@AxT社区机器人 /atinfo`
 
 示例：
 

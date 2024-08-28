@@ -5,12 +5,12 @@ title: 查询Steam用户信息
 
 # 查询Steam信息数据
 
-用法：`@机器人 /steam [ID/昵称]`
+用法：`@AxT社区机器人 /steam [ID/昵称]`
 
 示例：
 
 ```
-@机器人 /steam NoNameGMM
+@AxT社区机器人 /steam NoNameGMM
 ```
 
 返回示例：

@@ -5,11 +5,11 @@ title: 查询域名的详细信息
 
 # 查询域名的详细信息
 
-用法：`@机器人 /whois [域名]`
+用法：`@AxT社区机器人 /whois [域名]`
 
 示例：
 ```
-@机器人 /whois baidu.com
+@AxT社区机器人 /whois baidu.com
 ```
 
 返回示例：

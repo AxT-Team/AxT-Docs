@@ -48,4 +48,4 @@ D:\AxTBot> <虚拟环境文件夹>\Scripts\Activate
 
 如果您希望配置机器人框架，请参阅 [配置项](config)
 
-如果您希望使用AxTBot进行开发，请参阅 [开发指南](Developer)
+如果您希望使用AxTBot进行开发，请参阅 [开发指南](Developer/)

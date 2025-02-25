@@ -10,7 +10,7 @@ title: AxTBot
 ::: danger 此版本已退出更新
 当前版本的AxTBot因[消息链路更新为Webhook](https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html#websocket%E6%96%B9%E5%BC%8F)，已经停止对Websocket消息链路的更新
 
-如果您希望获取新功能，请移步[AxTBot v2](/AxTBot-v2)
+如果您希望获取新功能，请移步[AxTBot v2](/AxTBot-v2/)
 :::
 
 

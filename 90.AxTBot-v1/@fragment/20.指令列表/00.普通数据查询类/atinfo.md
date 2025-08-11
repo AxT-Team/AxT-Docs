@@ -1,0 +1,39 @@
+---
+sidebar_position: 6
+title: 获取AxTBot信息
+permalink: /axtbot/v1/atinfo
+date: 2025-08-11 13:35:27
+author:
+  name: AxT-Team - Shanshui2024
+  link: https://github.com/Shanshui2024
+---
+
+# 获取AxTBot信息
+
+用法：`@AxT社区机器人 /atinfo`
+
+示例：
+
+```
+@AxT社区机器人 /atinfo
+```
+
+返回示例：
+
+```
+AxTBot Public v1.2
+===============
+CPU: 7.0%
+RAM: 42.5%
+====消息数统计====
+群聊收/发: 717
+私聊收/发: 0
+频道收/发: 0
+频道私聊收/发: 0
+===============
+已正常运行
+7天 1时 11分 54秒
+===============
+官方社区群: 832275338
+===============
+```

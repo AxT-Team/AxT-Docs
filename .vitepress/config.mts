@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { defineTeekConfig } from "vitepress-theme-teek/config";
 import Permalink from "vitepress-plugin-permalink";
+import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
 
 // 站点信息描述
 const description = [
@@ -56,7 +57,13 @@ export default defineConfig({
   extends: teekConfig,
   base: '/',
   vite: {
-    plugins: [Permalink(/* options */)],
+    plugins: [Permalink(/* options */), MermaidPlugin()],
+    optimizeDeps: {
+      include: ['mermaid'],
+    },
+    ssr: {
+      noExternal: ['mermaid'],
+    },
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -126,6 +133,9 @@ export default defineConfig({
       dangerLabel: "危险",
       infoLabel: "信息",
       detailsLabel: "详细信息",
+    },
+    config(md) {
+      md.use(MermaidMarkdown);
     },
   },
   

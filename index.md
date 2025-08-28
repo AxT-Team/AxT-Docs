@@ -2,6 +2,7 @@
 home: true
 title: AxT Network
 article: false
+sidebar: false
 ---
 
 # AxT Network
